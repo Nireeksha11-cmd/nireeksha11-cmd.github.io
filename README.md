@@ -14,7 +14,7 @@
 
 - 🎓 BE Computer Science (3rd Year)  
 - 🏫 Sri Siddhartha Institute of Technology, Tumakuru  
-- 📊 CGPA: **8.36**  
+- 📊 CGPA: **8.44**  
 - 💡 Passionate about building real-world applications  
 - 🔍 Actively seeking **Internship & Full-Time Opportunities**  
 
@@ -71,7 +71,7 @@
 
 ## 📫 Connect with Me
 
-- 📧 Email: nireekshanaik6@gmail.com  
+- 📧 Email: nireekshagopalkrishna@gmail.com  
 - 🌐 Portfolio: https://nireeksha11-cmd.github.io/nireekshanaik.github.io  
 
 ---
