@@ -3,50 +3,211 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nireeksha Naik | Portfolio</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 <style>
-body { margin:0; font-family:'Poppins',sans-serif; background:#000; color:#fff; scroll-behavior:smooth; }
-section { min-height:100vh; display:flex; justify-content:center; align-items:center; padding:40px; }
-.box { background:#111; padding:40px; border-radius:20px; width:85%; max-width:1000px; box-shadow:0 0 30px rgba(255,255,255,0.1); }
-h1,h2 { color:#6c63ff; }
-nav { position:fixed; top:0; width:100%; background:#000; display:flex; justify-content:center; gap:20px; padding:10px; }
-nav a { color:#fff; text-decoration:none; }
-nav a:hover { color:#6c63ff; }
-.typing { border-right: 2px solid #6c63ff; white-space: nowrap; overflow: hidden; animation: typing 3s steps(30), blink 0.5s infinite alternate; }
-@keyframes typing { from { width:0 } to { width:100% } }
-@keyframes blink { 50% { border-color:transparent } }
-.card { background:#1a1a1a; padding:20px; border-radius:15px; margin:10px; }
-</style>
+:root{--accent:#6c63ff}
+*{box-sizing:border-box}
+body{margin:0;font-family:'Poppins',sans-serif;background:#000;color:#fff}
+nav{position:fixed;top:0;width:100%;background:rgba(0,0,0,.85);backdrop-filter:blur(8px);display:flex;justify-content:center;gap:24px;padding:14px;z-index:1000}
+nav a{color:#fff;text-decoration:none;font-weight:500;letter-spacing:.5px}
+nav a:hover{color:var(--accent)}
+section{min-height:100vh;display:flex;justify-content:center;align-items:center;padding:80px 20px}
+.box{background:#0f0f0f;padding:44px;border-radius:22px;width:92%;max-width:1100px;box-shadow:0 0 40px rgba(108,99,255,.15)}
+h1{font-size:40px;margin:10px 0}
+h2{color:var(--accent);margin-bottom:10px}
+p{line-height:1.6}
+.typing{border-right:2px solid var(--accent);white-space:nowrap;overflow:hidden;animation:typing 3s steps(30),blink .6s infinite alternate}
+@keyframes typing{from{width:0}to{width:100%}}
+@keyframes blink{50%{border-color:transparent}}
+.grid{display:flex;gap:20px;flex-wrap:wrap;justify-content:center;margin-top:20px}
+.card{
+background:#1a1a1a;
+padding:24px;
+border-radius:18px;
+width:330px;
+transition:0.4s;
+border:1px solid rgba(255,255,255,0.08);
+box-shadow:0 10px 25px rgba(0,0,0,0.35);
+}
+.card:hover{
+transform:translateY(-12px) scale(1.04);
+box-shadow:0 15px 35px rgba(108,99,255,.45);
+}
+img{border-radius:14px}
+.btn{display:inline-block;margin-top:15px;background:var(--accent);padding:10px 18px;border-radius:6px;color:#fff;text-decoration:none}
+.highlight{color:var(--accent);font-weight:600}
+.badge{display:inline-block;background:#1f1f1f;border:1px solid #2c2c2c;padding:6px 10px;border-radius:999px;margin:6px;font-size:13px}
+.btn {
+  display:inline-block;
+  margin:10px 10px 0 0;
+  padding:12px 22px;
+  border-radius:8px;
+  color:#fff;
+  text-decoration:none;
+  font-weight:500;
+  transition:0.3s;
+}.resume-btn { background:#6c63ff; box-shadow:0 0 15px rgba(108,99,255,0.6); }
+
+.resume-btn:hover { transform:scale(1.08); box-shadow:0 0 25px rgba(108,99,255,0.9); }
+
+.resume-btn-outline { border:2px solid #6c63ff; }
+
+.resume-btn-outline:hover { background:#6c63ff; transform:scale(1.08); } </style>
+
 </head>
 <body><nav>
 <a href="#home">Home</a>
 <a href="#about">About</a>
+<a href="#skills">Skills</a>
 <a href="#projects">Projects</a>
+<a href="#certificates">Certificates</a>
 <a href="#contact">Contact</a>
 </nav><section id="home">
 <div class="box" data-aos="fade-up" style="text-align:center;">
-<img src="profile.jpg" width="180" style="border-radius:50%;">
+<img src="profile.jpg" width="170" style="border-radius:50%;border:3px solid var(--accent)">
 <h1>Nireeksha Naik</h1>
 <p class="typing">Aspiring Software Developer</p>
+<p>I build <span class="highlight">real-world solutions</span>, love solving problems, and constantly explore new technologies to grow as a developer.</p>
+<a href="#contact" class="btn">Hire Me</a>
 </div>
 </section><section id="about">
 <div class="box" data-aos="fade-right">
 <h2>About Me</h2>
-<p>3rd year BE CSE student passionate about development and problem solving.</p>
+<p>I am a <b>4th year Computer Science Engineering student</b> at Sri Siddhartha Institute of Technology, Tumakuru with a CGPA of 8.44. I am passionate about building applications that solve real-world problems and improving my skills every day.</p>
+<p>I actively participate in <span class="highlight">hackathons, technical events, and leadership activities</span>. I have experience working in teams, managing events, and contributing to impactful initiatives.</p><h2>Career Goal</h2>
+<p>To become a highly skilled software developer by working on innovative and impactful projects, gaining real-world experience, and contributing to meaningful technological solutions.</p><h2>Currently</h2>
+<p>🔍 Actively <b>seeking internship opportunities</b> and preparing for <b>full-time software roles</b>.</p><h2>Interests</h2>
+<div>
+<span class="badge">Fashion Shows</span>
+<span class="badge">Dancing</span>
+<span class="badge">Event Management</span>
+<span class="badge">Creative Designing</span>
+</div>
+</div>
+</section><section id="skills">
+<div class="box" data-aos="fade-left">
+<h2>Skills</h2>
+<div class="grid">
+<div class="card">
+<h3>Programming Languages</h3>
+<p>Java, Python, C, SQL, JavaScript</p>
+</div>
+<div class="card">
+<h3>Web Development</h3>
+<p>HTML5, CSS, JavaScript, Node.js, Express.js, Flutter (Basics)</p>
+</div>
+<div class="card">
+<h3>Databases & Tools</h3>
+<p>MongoDB, MySQL, SQLite, Git, GitHub, VS Code, Android Studio, Arduino IDE, Postman</p>
+</div>
+<div class="card">
+<h3>Core Computer Science</h3>
+<p>Data Structures & Algorithms, Object-Oriented Programming (OOP), Database Management Systems (DBMS), Operating Systems, Computer Networks</p>
+</div>
+<div class="card">
+<h3>Soft Skills</h3>
+<p>Leadership, Problem Solving, Teamwork, Communication, Event Management, Time Management</p>
+</div>
+<div class="card">
+<h3>Tools</h3>
+<p>Git, VS Code</p>
+</div>
+</div>
 </div>
 </section><section id="projects">
 <div class="box" data-aos="zoom-in">
 <h2>Projects</h2>
-<div class="card">IoT Crowd Monitoring System</div>
-<div class="card">PlaceIQ – Smart Location Finder</div>
+<div class="grid">
+<div class="card">
+<h3>Smart Entry-Exit Monitoring System</h3>
+<p>Developed an IoT-based real-time people counting system using Arduino and sensors to monitor entry and exit. The system accurately tracks movement and displays live counts.</p>
+<p><b>Tech:</b> Arduino, IR Sensors, IoT</p>
+</div>
+<div class="card">
+<h3>PlaceIQ – Intelligent Place Insights</h3>
+<p>Developed a location-based application that provides real-time crowd insights using GPS, map integration, and stored data to help users identify less crowded places.</p>
+<p><b>Tech:</b> Flutter, Node.js, Express.js, MongoDB, GPS</p>
+</div>
+<div class="card">
+<h3>AURA Fashion – E-Commerce Website</h3>
+<p>Designed and developed a responsive fashion e-commerce website with an attractive user interface, product listings, and a smooth shopping experience.</p>
+<p><b>Tech:</b> HTML5, CSS3, JavaScript</p>
+</div>
+<div class="card">
+<h3>Smart Complaint Management System</h3>
+<p>Built a web-based complaint management application to register, track, and manage complaints efficiently with secure user authentication.</p>
+<p><b>Tech:</b> Django, Python, SQLite, HTML, CSS</p>
+</div>
+</div>
+</div>
+</section><section id="certificates">
+<div class="box" data-aos="fade-up">
+<h2>Certificates & Achievements</h2>
+<div class="grid">
+<div class="card">
+<img src="cert1.jpg" width="240">
+<p><b>Code Bizz 2026 – Volunteer</b><br>Demonstrated leadership and coordination while organizing a technical event.</p>
+</div>
+<div class="card">
+<img src="cert2.jpg" width="240">
+<p><b>Viksit Bharat YLD 2026</b><br>Participated in a national-level initiative highlighting innovation and leadership.</p>
+</div>
+<div class="card">
+<img src="cert3.jpg" width="240">
+<p><b>Shark Tank Open House</b><br>Contributed to organizing an innovation-driven event showcasing teamwork.</p>
+</div>
+<div class="card">
+<img src="cert4.jpg" width="240">
+<p><b>NPTEL – Cloud Computing</b><br>
+Successfully completed a 12-week NPTEL Cloud Computing course offered by IIT Kharagpur through SWAYAM with a consolidated score of <b>71%</b>. Learned cloud architecture, virtualization, cloud services, and distributed computing.</p>
+</div>
+<div class="card">
+<img src="cert5.jpg" width="240">
+<p><b>DISHA BHARAT – State-Level Student Conclave</b><br>
+Participated in the "Youth Inspires: Towards a Meaningful Life" conclave, enhancing leadership, communication, and personal development skills.</p>
+</div>
+<div class="card">
+<img src="cert6.jpg" width="240">
+<p><b>NPTEL – Introduction to Industry 4.0 and Industrial Internet of Things</b><br>
+Successfully completed the NPTEL certification with a score of <b>73%</b>. Learned Industry 4.0 concepts, IIoT, smart manufacturing, cyber-physical systems, and industrial automation.</p>
+</div>
+<div class="card">
+<img src="cert7.jpg" width="240">
+<p><b>Infosys Springboard – Computer Vision</b><br>
+Successfully completed the Computer Vision course, learning image processing fundamentals, feature extraction, and computer vision concepts.</p>
+</div>
+<div class="card">
+<img src="cert8.jpg" width="240">
+<p><b>Infosys Springboard – Web Design</b><br>
+Successfully completed the Web Design course, gaining practical knowledge of HTML, CSS, responsive design, and user-friendly web interfaces.</p>
+</div>
+</div>
 </div>
 </section><section id="contact">
 <div class="box" data-aos="fade-up">
 <h2>Contact</h2>
-<p>Email: nireekshanaik6@gmail.com</p>
+
+<p><b>Email:</b> nireekshagopalkrishan@gmail.com</p>
+
+<p><b>GitHub:</b>
+<a href="https://github.com/nireekshanaik" target="_blank" style="color:#6c63ff;text-decoration:none;">
+github.com/nireekshanaik
+</a>
+</p>
+
+<p><b>Portfolio:</b>
+<a href="https://nireeksha11-cmd.github.io" target="_blank" style="color:#6c63ff;text-decoration:none;">
+nireeksha11-cmd.github.io
+</a>
+</p>
+<p><b>Open to Internship & Full-Time Software Developer Opportunities</b></p>
+
+<a href="resume.pdf" target="_blank" class="btn resume-btn">
+📄 View Resume
+</a>
 </div>
 </section><script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script><script>
-AOS.init();
+AOS.init({ duration:1200 });
 </script></body>
 </html>
